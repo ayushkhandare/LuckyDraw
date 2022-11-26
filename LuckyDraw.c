@@ -37,6 +37,7 @@ struct Node* deleteAtIndex(struct Node* head,int value)
     }
     
     p->next = q->next;
+    printf("Sorry, Person: %d is eliminated\n", q->data);
     free(q);
     
     return p->next;
@@ -97,6 +98,7 @@ int main()
     tenth->next = head;
 
 	int choice;
+    printf("\nWelcome to Lucky Draw Process \n!!Winner of Lucky Draw will get a ticket to NEW-YORK CITY!!\n");
 	while(1)
 	{
 		printf("\nDo you want to continue draw process ? \nPress 1 to continue \nPress 2 for declaration of winner \nPress any number to EXIT.\n");
